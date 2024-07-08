@@ -22,7 +22,8 @@ public class PasswordGenerator implements ActionListener{
     String[] lengths;   // String array to store length of password as string in JComboBox
     PasswordGenerator(){
         jframe = new JFrame("Nimbus Look and Feel");
-        Color c = new Color(204,255,255);
+        Color c = new Color(172,223,255);
+        Color b = new Color(5,73,140);
         // Setting background color for JFrame
         jframe.getContentPane().setBackground(c);
         lengths = new String[]{"8","9","10","11","12","13","14","15","16","17","18","19","20",
@@ -47,7 +48,7 @@ public class PasswordGenerator implements ActionListener{
         btngen = new JButton("Generate");
         btngen.addActionListener(this);
         btngen.setBounds(130,195,100,30);
-        btngen.setBackground(Color.BLUE);
+        btngen.setBackground(b);
         btngen.setForeground(Color.white);
         ta = new JTextArea();
         ta.setBounds(40,240,310,35);
