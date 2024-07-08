@@ -1,9 +1,7 @@
 import java.awt.Color;
 import java.awt.Font;
-// import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-// import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
@@ -27,7 +25,6 @@ public class PasswordGenerator implements ActionListener{
         Color c = new Color(204,255,255);
         // Setting background color for JFrame
         jframe.getContentPane().setBackground(c);
-        // Image icon = new ImageIcon(this.getClass().getResource("/icons/passwordgenicon.png")).getImage();
         lengths = new String[]{"8","9","10","11","12","13","14","15","16","17","18","19","20",
             "21","22","23","24","25"};
         plen = new JLabel("Select password length");
@@ -66,7 +63,6 @@ public class PasswordGenerator implements ActionListener{
         jframe.add(ta);
         jframe.setLayout(null);
         jframe.setTitle("Strong Password Generator");
-        // jframe.setIconImage(icon);
         jframe.setSize(400,360);
         jframe.setVisible(true);
         jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
